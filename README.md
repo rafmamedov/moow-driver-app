@@ -48,4 +48,4 @@ npx expo start
 ### Please note that this is a prototype and may not include all features.
 <br>
 <br>
-It is intended for testing and design validation purposes only.
+### It is intended for testing and design validation purposes only.
