@@ -1,20 +1,35 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import {
+  useFonts,
+  Mulish_300Light,
+  Mulish_500Medium,
+  Mulish_700Bold,
+} from '@expo-google-fonts/mulish';
 
-export default function App() {
+import { NavBarProvider } from './context/navBarContext';
+import MainStack from './navigate';
+import NavBar from './components/navBar/navBar';
+
+const App = () => {
+  let [fontsLoaded, fontError] = useFonts({
+    Mulish_300Light,
+    Mulish_500Medium,
+    Mulish_700Bold,
+  });
+
+  if (!fontsLoaded && !fontError) {
+    return null;
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <NavBarProvider>
+        <MainStack />
+        <NavBar />
+      </NavBarProvider>
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
