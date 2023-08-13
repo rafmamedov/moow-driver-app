@@ -45,7 +45,4 @@ npx expo start
 5. If not already installed, install the Expo Go app on your iOS device and sign up there.
 6. Use the Expo Go app to follow the QR code displayed in the terminal. This will open the app on your device for testing.
 
-### Please note that this is a prototype and may not include all features.
-<br>
-<br>
-### It is intended for testing and design validation purposes only.
+### Please note that this is a prototype and may not include all features. It is intended for testing and design validation purposes only.
