@@ -1,7 +1,7 @@
 export const originInput = {
   container: {
     position: 'absolute',
-    top: 30,
+    top: '5%',
     flex: 0,
     width: '100%',
     zIndex: 2,
@@ -12,7 +12,7 @@ export const originInput = {
 export const destinationInput = {
   container: {
     position: 'absolute',
-    top: 80,
+    top: '12%',
     flex: 0,
     width: '100%',
     zIndex: 1,
