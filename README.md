@@ -2,12 +2,13 @@
 
 This is a prototype navigation app built using React Native and Expo.
 <br>
+<br>
 The app fulfills the following tasks:
 
 ## Implemented Tasks
 
 - Created a bottom navigation bar.
-- Implemented the App according to the provided design.
+- Implemented the app according to the provided design.
 - Integrated Google Maps API for map functionalities.
 - Implemented plotting a route from point A to point B.
 - Implemented plotting an alternative routes.
@@ -37,11 +38,11 @@ npm install -g expo-cli
 npm install
 
 # Start the development server
-npm start
+npx expo start
 ```
 
-4. After running npm start, a QR code will be displayed in the terminal.
-5. If not already installed, install the Expo Go app on your iOS device.
+4. After running npx expo start, a QR code will be displayed in the terminal.
+5. If not already installed, install the Expo Go app on your iOS device and sign up there.
 6. Use the Expo Go app to follow the QR code displayed in the terminal. This will open the app on your device for testing.
 
-### Please note that this is a prototype and may not include all features. <br> It is intended for testing and design validation purposes only.
+### Please note that this is a prototype and may not include all features. It is intended for testing and design validation purposes only.
